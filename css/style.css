@@ -368,12 +368,13 @@ body {
     .second {
         width: 100%;
         height: auto;
-        min-height: 65vh;
+        min-height: 45vh;
     }
     
     #about-us {
         flex-direction: column;
         margin-bottom: 10%;
+        height: 90vh;
     }
     
     #about-us>img {
@@ -427,5 +428,73 @@ body {
     
     .subscribe i {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .elem img {
+        display: none;
+    }
+    
+    .elem h1 {
+        font-size: 10vw;
+        font-weight: 500;
+        opacity: .6;
+    }
+
+    .heading h1 {
+        margin-left: 12px;
+        font-size: 14vw;
+    }
+
+    .blocktext h1 {
+        margin-left: 24px;
+    }
+
+    .smallHeading h5 {
+        font-size: .7rem;
+    }
+
+    .secon {
+        margin-right: 12px;
+    }
+
+    .heroFooter {
+        flex-wrap: wrap;
+    }
+
+    .heroFooter a:nth-child(2) {
+        margin-right: 12px;
+    }
+
+    .circle {
+        margin-top: 10%;
+    }
+    
+    .iconSet {
+        margin-right: 12px;
+        width: 100%;
+    }
+
+    .second {
+        min-height: 25vh;
+    }
+
+    #about-us {
+        height: 90vh;
+        padding-right: 0;
+    }
+
+    #about-us>img {
+        width: 55%;
+        margin-bottom: 5%;
+    }
+
+    .footer-right {
+        flex-wrap: wrap;
+    }
+
+    .footer-right a:last-child {
+        margin-top: 12px;
     }
 }
